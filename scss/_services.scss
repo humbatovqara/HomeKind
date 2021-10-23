@@ -1,0 +1,74 @@
+.services {
+    padding: 80px 0;
+    background: $lightgray !important;
+
+    /* Services Nav */
+    &__menu {
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    &__item {
+        .active {
+            background-color: $lightgray !important;
+            color: $buttonBlue !important;
+            border-color: $buttonBlue !important;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+        }
+    }
+
+    &__link--left,
+    &__link--right {
+        @extend %services-link;
+        padding: 13px 68px 14px 68px;
+        background-color: #fff;
+        border: 2px solid $grayc4 !important;
+        border-radius: 0 !important;
+    }
+
+    &__link--left {
+        border-radius: 40px 0px 0px 40px !important;
+        border-right: 0.1px solid !important;
+    }
+
+    &__link--right {
+        border-radius: 0px 40px 40px 0px !important;
+        border-left: 0.1px solid !important;
+    }
+
+
+
+    /* Services Content */
+    &__content {
+        margin-bottom: 50px;
+    }
+
+    &__card {
+        margin-bottom: 50px;
+        background: $lightgray;
+        width: 19rem;
+        border: none;
+
+        &-img {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto;
+            padding-bottom: 20px;
+        }
+
+        &-body {
+            text-align: center;
+            padding: 0;
+            width: 100%;
+        }
+
+        &-title {
+            @extend %services-card-title;
+        }
+
+        &-text {
+            @extend %services-card-text;
+        }
+    }
+}

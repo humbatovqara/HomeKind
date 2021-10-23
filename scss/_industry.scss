@@ -1,0 +1,43 @@
+.industry {
+    background: #f8f8f8;
+    padding: 0 0 100px 0;
+
+    &__inner {
+        @extend %flex-full-col;
+    }
+
+    &__title {
+        @extend %industry-title;
+        margin-bottom: 10px;
+    }
+
+    &__subtitle {
+        @extend %industry-subtitle;
+        margin-bottom: 50px;
+    }
+
+    &__card {
+        background-color: $grayf8;
+        border: none;
+        align-items: center;
+
+        &--img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 20px;
+        }
+
+        &-title,
+        &-text {
+            text-align: center;
+        }
+
+        &-title {
+            @extend %industry-card-title;
+        }
+
+        &-text {
+            @extend %industry-card-text;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.subcover {
+    background-color: $colorPink;
+    @extend %flex-full-col;
+    padding: 50px 0 60px 0;
+
+    &__title {
+        @extend %subcover-title;
+    }
+
+    &__text {
+        padding: 10px 100px 0 100px;
+        margin-bottom: 0;
+        @extend %subcover-text;
+        text-align: center;
+    }
+}

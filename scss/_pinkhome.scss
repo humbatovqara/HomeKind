@@ -1,0 +1,26 @@
+.pinkHome {
+    padding: 120px 0 100px 0;
+    background: $grayf8;
+
+    &__inner {
+        @extend %flex-full-col;
+        padding: 73px 0 77px 0;
+        background-image: url(../img/pinkhome-background.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 30px;
+
+        .cover__subtitle {
+            margin-top: 30px;
+
+            button {
+                box-shadow: 0px 15px 25px rgba(59, 114, 255, 0.4);
+            }
+        }
+    }
+
+    &__text {
+        @extend %pink-home;
+        margin-bottom: 0;
+    }
+}

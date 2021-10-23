@@ -1,0 +1,88 @@
+.footer {
+    background-color: #333333;
+    padding: 67px 0 50px 0;
+
+    &__city,
+    &__wedo,
+    &__about,
+    &__contact-title,
+    &__contact-office {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: 0.12em;
+        color: #fff;
+        opacity: 0.4;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+
+        &-list {
+            margin-bottom: 5px;
+        }
+
+        &-link {
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 500;
+            font-family: 'Roboto', sans-serif;
+            line-height: 13px;
+            color: #fff;
+            opacity: 0.8;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+
+    &__city-menu,
+    &__wedo-menu,
+    &__about-menu {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    &__social-title {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: 0.12em;
+        color: #fff;
+        opacity: 0.4;
+        text-transform: uppercase;
+        margin: 21px 0 30px 0;
+    }
+
+    &__contact-office {
+        text-transform: capitalize;
+    }
+
+    &__contact-number {
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: 700;
+        color: #fff;
+        opacity: 0.8;
+    }
+
+    &__subtitle {
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 14px;
+        color: #fff;
+        opacity: 0.4;
+        margin-top: 85px;
+        margin-bottom: 0;
+    }
+
+    &__about-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__contact-col {
+        text-align: right;
+    }
+}

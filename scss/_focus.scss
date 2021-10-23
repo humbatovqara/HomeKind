@@ -1,0 +1,62 @@
+.focus {
+
+    /* Focus Left */
+    &__left {
+        padding: 80px 0 74px 0;
+
+        &--col {
+            padding-left: 5rem;
+        }
+    }
+
+    &__title {
+        width: 400px;
+        @extend %focus-title;
+        padding-bottom: 50px;
+    }
+
+    &__card {
+        border: none;
+
+        &-title {
+            @extend %focus-card-title;
+            border-left: 3px solid #3B72FF;
+            padding-left: 14px;
+            margin-bottom: 14px;
+        }
+
+        &-text {
+            @extend %focus-card-text;
+        }
+    }
+
+    /* Focus Right */
+    &__right {
+        height: 100%;
+        position: relative;
+        background-image: url(../img/focus-right-image.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        &--col {
+            padding-right: 0;
+        }
+
+        // &-icon {
+        //     width: 80px;
+        //     height: 93px;
+        //     position: absolute;
+        //     bottom: 275px;
+        //     left: -14.5%;
+        //     transform: translate(50%);
+        // }
+
+        &::after {
+            content: url(../icon/focus-health-icon.svg);
+            position: absolute;
+            bottom: 25%;
+            left: -39px;
+        }
+    }
+}

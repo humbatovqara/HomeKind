@@ -1,0 +1,37 @@
+.process {
+    padding: 80px 0;
+
+    &__title {
+        @extend %process-title;
+        margin-bottom: 50px;
+    }
+
+    &__card {
+        width: 270px;
+        border: none;
+        @extend %flex-full;
+
+        &-img {
+            @extend %process-img;
+            @extend %flex-full;
+            width: 80px;
+            height: 80px;
+            border: 1px solid #C4C4C4;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        &-body {
+            padding: 1rem 0.5rem;
+        }
+
+        &-title {
+            @extend %process-card-title;
+        }
+
+        &-text {
+            @extend %process-card-text;
+        }
+    }
+
+}

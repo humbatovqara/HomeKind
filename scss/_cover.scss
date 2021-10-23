@@ -1,0 +1,39 @@
+.cover {
+    @extend %flex-align;
+    @extend %background;
+    position: relative;
+    background-image: url(../img/cover-background.png);
+    padding: 128px 0 127px 0;
+    // height: 450px;
+
+    &__layer {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 60%;
+        height: 100%;
+        background: radial-gradient(100% 148.62% at 0% 0%, #830D4D 0%, rgba(131, 13, 77, 0) 100%);
+    }
+
+    .container {
+        z-index: 2;
+    }
+
+    &__title {
+        @extend %cover-title;
+        padding-bottom: 40px;
+        margin-bottom: 0;
+    }
+
+    &__button {
+        @extend %cover-button;
+        background-color: $buttonBlue;
+        border: 2px solid #fff;
+        border-radius: 20px;
+        padding: 19px 25px;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+}

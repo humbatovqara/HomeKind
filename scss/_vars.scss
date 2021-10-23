@@ -1,0 +1,357 @@
+/* Flex Box */
+%flex-full {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%flex-full-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+%flex-align {
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* Colors */
+$backgroundColor: #F4F4F4;
+$lightgray: #f7f7f7;
+$grayf8: #F8F8F8;
+$grayc4: #C4C4C4;
+$middleGray: #595959;
+$gray4d: #4D4D4D;
+$gray80: #808080;
+$lightBlue: #3C72FF;
+$buttonBlue: #3B72FF;
+$colorPink: #EF33B4;
+
+
+/* Fonts Family */
+%font-sailec {
+    font-family: 'Roboto', sans-serif; //Change Sailec
+}
+
+%font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+%font-ubuntu {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+/* Font Size */
+%size11pxn {
+    font: {
+        size: 11px;
+        weight: 400;
+    }
+}
+
+%size15pxb {
+    font: {
+        size: 15px;
+        weight: 700;
+    }
+}
+
+%size16pxn {
+    font: {
+        size: 16px;
+        weight: 400;
+    }
+}
+
+%size18pxn {
+    font: {
+        size: 18px;
+        weight: 400;
+    }
+}
+
+%size18pxb {
+    font: {
+        size: 18px;
+        weight: 700;
+    }
+}
+
+%size20pxn {
+    font: {
+        size: 20px;
+        weight: 400;
+    }
+}
+
+%size20pxb {
+    font: {
+        size: 20px;
+        weight: 700;
+    }
+}
+
+%size22pxn {
+    font: {
+        size: 20px;
+        weight: 400;
+    }
+}
+
+%size24pxb {
+    font: {
+        size: 24px;
+        weight: 700;
+    }
+}
+
+%size26pxb {
+    font: {
+        size: 26px;
+        weight: 700;
+    }
+}
+
+%size32pxn {
+    font: {
+        size: 32px;
+        weight: 400;
+    }
+}
+
+%size32pxb {
+    font: {
+        size: 32px;
+        weight: 700;
+    }
+}
+
+%size36pxb {
+    font: {
+        size: 36px;
+        weight: 700;
+    }
+}
+
+%size40pxb {
+    font: {
+        size: 40px;
+        weight: 700;
+    }
+}
+
+
+/* Header */
+%header-menu {
+    @extend %size15pxb;
+    @extend %font-ubuntu;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #000 !important;
+}
+
+%header-number {
+    @extend %size24pxb;
+    @extend %font-ubuntu;
+    line-height: 28px;
+    color: #fff;
+}
+
+%header-text {
+    @extend %size11pxn;
+    @extend %font-ubuntu;
+    line-height: 13px;
+    color: #fff;
+}
+
+/* Cover */
+%cover-title {
+    @extend %font-ubuntu;
+    @extend %size36pxb;
+    line-height: 47px;
+    color: #fff;
+}
+
+%cover-button {
+    @extend %font-roboto;
+    @extend %size18pxb;
+    color: #fff;
+}
+
+/* Subcover */
+%subcover-title {
+    @extend %size26pxb;
+    @extend %font-ubuntu;
+    text-align: center;
+    line-height: 34px;
+    color: #fff;
+}
+
+%subcover-text {
+    @extend %size20pxn;
+    @extend %font-roboto;
+    line-height: 23px;
+    color: #fff;
+}
+
+/* Services */
+%services-link {
+    @extend %size20pxn;
+    @extend %font-roboto;
+    line-height: 23px;
+    color: $middleGray;
+}
+
+%services-card-title {
+    @extend %size20pxb;
+    @extend %font-ubuntu;
+    line-height: 26px;
+    color: $gray4d;
+}
+
+%services-card-text {
+    @extend %font-roboto;
+    @extend %size16pxn;
+    line-height: 22px;
+    color: $gray80;
+}
+
+
+/* Service Attention */
+%servattent-title {
+    @extend %size24pxb;
+    line-height: 31px;
+    text-align: center;
+    text-transform: capitalize;
+    color: $colorPink;
+}
+
+%servattent-text {
+    @extend %size20pxn;
+    @extend %font-roboto;
+    line-height: 26px;
+    text-align: center;
+    text-transform: capitalize;
+    color: $buttonBlue;
+}
+
+
+/* Focus */
+%focus-title {
+    @extend %size26pxb;
+    line-height: 34px;
+    color: $colorPink;
+}
+
+%focus-card-title {
+    @extend %size18pxb;
+    line-height: 23px;
+    color: $gray4d;
+}
+
+%focus-card-text {
+    @extend %size16pxn;
+    @extend %font-roboto;
+    line-height: 22px;
+    color: $gray80;
+}
+
+/* Founder */
+%founder-text {
+    @extend %size22pxn;
+    line-height: 37px;
+    color: $middleGray;
+}
+
+%founder-title {
+    @extend %size24pxb;
+    @extend %font-ubuntu;
+    line-height: 31px;
+    color: $gray4d;
+}
+
+%founder-subtitle {
+    @extend %font-roboto;
+    @extend %size18pxn;
+    line-height: 23px;
+    color: $gray80;
+}
+
+/* Pink Home Text */
+%pink-home {
+    @extend %size40pxb;
+    line-height: 52px;
+    text-align: center;
+    color: #fff;
+}
+
+/* Industry */
+%industry-title {
+    @extend %size26pxb;
+    line-height: 34px;
+    text-align: center;
+    color: #4F4C4C;
+}
+
+%industry-subtitle {
+    @extend %font-roboto;
+    @extend %size18pxn;
+    line-height: 25px;
+    text-align: center;
+    color: $gray80;
+}
+
+%industry-card-title {
+    @extend %size20pxb;
+    line-height: 26px;
+    color: $gray4d;
+}
+
+%industry-card-text {
+    @extend %font-roboto;
+    @extend %size16pxn;
+    line-height: 22px;
+    color: $gray80;
+}
+
+
+/* Process */
+%process-title {
+    @extend %size32pxb;
+    line-height: 42px;
+    text-align: center;
+    color: $colorPink;
+}
+
+%process-img {
+    @extend %size32pxb;
+    line-height: 32px;
+    color: $buttonBlue;
+}
+
+%process-card-title {
+    @extend %size18pxb;
+    line-height: 23px;
+    color: $gray4d;
+    text-align: center;
+}
+
+%process-card-text {
+    @extend %size16pxn;
+    @extend %font-roboto;
+    text-align: center;
+    color: $gray80;
+}
+
+
+/* Other */
+%background {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
