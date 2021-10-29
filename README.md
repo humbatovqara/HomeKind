@@ -8,7 +8,7 @@ This is the first project with a responsive design that I have used the Scss and
 - [Launch](#launch)
 
 ## Demo
-Here is a working live demo : https://humbatovqara.github.io/homekind/html/
+Here is a working live demo : https://humbatovqara.github.io/HomeKind/html/
 
 ## Illustrations
 ![Desktop 1](https://user-images.githubusercontent.com/60696274/138569838-3a0815ce-516f-4203-b9e1-becd028a2fef.PNG)
